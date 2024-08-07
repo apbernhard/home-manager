@@ -3,6 +3,9 @@
 {
   imports = [
     ./programs
+    ./git.nix
+    ./stylix.nix
+    ./vim.nix
   ];
 
   home.username = "dertrudi";
@@ -18,23 +21,42 @@
 
 
   home.packages = [
+
+    # Utils
     pkgs.bat
-    pkgs.nemo
-    pkgs.gimp
-    pkgs.signal-desktop
     pkgs.btop
     pkgs.feh
+    pkgs.nemo
+
+    # Graphics
+    pkgs.gimp
     pkgs.imagemagick
+
+    # Communication
+    pkgs.signal-desktop
+    pkgs.bitwarden
+    
+    # Office tools
+    pkgs.libreoffice
+    pkgs.hunspell
+    pkgs.hunspellDicts.de-de
+    pkgs.hunspellDicts.en-us
+    pkgs.hyphen
+    pkgs.aspell
+    pkgs.aspellDicts.de
+    pkgs.aspellDicts.en
+    pkgs.aspellDicts.es
+    
+    # PDF
     pkgs.okular
     pkgs.zathura
-    pkgs.bitwarden
   ];
 
   home.file = {
   };
 
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "vim";
   };
 
   programs.home-manager.enable = true;
