@@ -9,6 +9,8 @@
       "dbepggeogbaibhgnhhndojpepiihcmeb" # vimium
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock origin
       "oboonakemofpalcgghocfoadofidjkkk" # KeepassXC
+      "nngceckbapebfimnlniiiahkandclblb" # bitwarden
+
     ];
   };
 }

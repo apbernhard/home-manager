@@ -9,8 +9,8 @@
       jnoortheen.nix-ide
       jdinhlife.gruvbox
     ];
-    userSettings = {
-      "workbench.colorTheme" = "Gruvbox Light Hard";
-    };
+    # userSettings = {
+    #   "workbench.colorTheme" = "Gruvbox Light Hard";
+    # };
   };
 }

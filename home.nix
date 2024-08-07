@@ -2,9 +2,7 @@
 
 {
   imports = [
-    ./git.nix
-    ./chromium.nix
-    ./vscodium.nix
+    ./programs
   ];
 
   home.username = "dertrudi";
@@ -24,6 +22,12 @@
     pkgs.nemo
     pkgs.gimp
     pkgs.signal-desktop
+    pkgs.btop
+    pkgs.feh
+    pkgs.imagemagick
+    pkgs.okular
+    pkgs.zathura
+    pkgs.bitwarden
   ];
 
   home.file = {
@@ -34,19 +38,5 @@
   };
 
   programs.home-manager.enable = true;
-  
-  services.flameshot = {
-    enable = true;
-    settings = {
-      General = {
-        disabledTrayIcon = true;
-        showStartupLaunchMessage = true;
-        checkForUpdates=false;
-        contrastOpacity=188;
-        drawColor="#ee82ee";
-        savePath="/home/dertrudi/Downloads";
-        showHelp=false;
-      };
-    };
-  };
+
 }
