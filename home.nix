@@ -6,6 +6,7 @@
     ./git.nix
     ./stylix.nix
     ./vim.nix
+    ./zsh.nix
   ];
 
   home.username = "dertrudi";
@@ -27,6 +28,7 @@
     pkgs.btop
     pkgs.feh
     pkgs.nemo
+    pkgs.treefmt
 
     # Graphics
     pkgs.gimp
@@ -34,6 +36,7 @@
 
     # Communication
     pkgs.signal-desktop
+
     pkgs.bitwarden
     
     # Office tools
