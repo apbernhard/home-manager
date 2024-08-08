@@ -7,7 +7,6 @@ with lib;
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-
     shellAliases = {
       ls = "ls --color=tty";
       l = "ls -CFh";
