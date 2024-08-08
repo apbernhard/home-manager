@@ -8,6 +8,8 @@ with lib;
     defaultKeymap = lib.mkDefault "viins";
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    initExtra = ''xset r rate 200 25
+      eval "$(register-python-argcomplete pipx)"'';
     shellAliases = {
       cat="bat";
       ls = "ls --color=tty";
@@ -40,7 +42,6 @@ with lib;
     settings = builtins.fromJSON (builtins.readFile ./gruvbox.json);
     enableZshIntegration = true;  
   };
-
   programs.mcfly = {
     enable = true;
     enableLightTheme = true;
