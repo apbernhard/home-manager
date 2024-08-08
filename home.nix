@@ -3,10 +3,9 @@
 {
   imports = [
     ./programs
-    ./git.nix
+    ./terminal
     ./stylix.nix
     ./vim.nix
-    ./zsh.nix
   ];
 
   home.username = "dertrudi";
@@ -29,6 +28,7 @@
     pkgs.feh
     pkgs.nemo
     pkgs.treefmt
+    pkgs.meslo-lgs-nf
 
     # Graphics
     pkgs.gimp
@@ -57,6 +57,7 @@
   ];
 
   home.file = {
+
   };
 
   home.sessionVariables = {
