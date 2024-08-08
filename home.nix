@@ -36,6 +36,7 @@
 
     # Communication
     pkgs.signal-desktop
+    pkgs.element-desktop
 
     pkgs.bitwarden
     

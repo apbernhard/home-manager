@@ -13,10 +13,10 @@
       filetype on "filetype detection
       filetype indent on "load an indent file for the detected file type.
       filetype plugin on "turns on ftplugin
-      syntax on "syntax highlighting
+      syntax off "syntax highlighting
 
       set encoding=utf-8
-      set spell spelllang=en_us
+      "set spell spelllang=en_us
       "
       """"""""""""""""""""""""""""""
       ""Appearance
@@ -125,8 +125,8 @@
       """"""""""""""""""""""""""""""
 
       " activate fonts for symbols
-      let g:airline_powerline_fonts = 1
-      let g:airline_theme='base16_gruvbox_light_soft'
+      let g:airline_theme='base16_gruvbox_light_hard'
+      "let g:airline_powerline_fonts = 1
 
 
       ""UNDOING
