@@ -25,6 +25,7 @@ with lib;
       nix-show-garbage-roots = "ls -lh /nix/var/nix/gcroots/auto/";
       umount="sudo umount";
       pacman="sudo pacman";
+      ranc="ranger ~/.config";
       q="exit";
       rr="rm -R";
       sp="nmcli device wifi show-password";
