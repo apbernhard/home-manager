@@ -51,6 +51,9 @@
     pkgs.aspellDicts.en
     pkgs.aspellDicts.es
     
+    # Music
+    pkgs.spotify
+    
     # PDF
     pkgs.okular
     pkgs.zathura

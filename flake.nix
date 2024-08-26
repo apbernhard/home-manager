@@ -19,11 +19,23 @@
   outputs = { nixpkgs, home-manager, stylix, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        }; 
+      };
     in {
       homeConfigurations."dertrudi" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ./stylix.nix stylix.homeManagerModules.stylix];
+        modules = [ 
+          ./home.nix
+          ./stylix.nix
+          stylix.homeManagerModules.stylix
+          {
+            nixpkgs.config.allowUnfree = true;
+          } 
+        ];
       };
     };
 }
