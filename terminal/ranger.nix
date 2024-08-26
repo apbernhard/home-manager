@@ -3,6 +3,9 @@ with pkgs;
 {
   programs.ranger = {
     enable = true;
+    extraConfig = ''
+      default_linemode devicons
+    ''; 
     mappings = {
       dT = "shell gio trash %s"; 
     };

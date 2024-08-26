@@ -2,6 +2,6 @@
   imports = [
     ./git.nix
     ./zsh.nix
-    ./ranger
+    ./ranger.nix
   ];
 }
