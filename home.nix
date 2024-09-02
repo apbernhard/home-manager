@@ -39,7 +39,10 @@
     pkgs.element-desktop
 
     pkgs.bitwarden
-    
+
+    # Drivers
+    pkgs.brlaser
+
     # Office tools
     pkgs.libreoffice
     pkgs.hunspell
