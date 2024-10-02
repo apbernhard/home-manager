@@ -7,6 +7,9 @@ with lib;
     enable = true;
     defaultKeymap = lib.mkDefault "viins";
     enableCompletion = true;
+    autosuggestion = {
+      enable = true;
+    };
     syntaxHighlighting.enable = true;
     initExtra = ''xset r rate 200 25
       eval "$(register-python-argcomplete pipx)"'';

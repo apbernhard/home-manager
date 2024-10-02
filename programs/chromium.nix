@@ -10,7 +10,9 @@
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock origin
       "oboonakemofpalcgghocfoadofidjkkk" # KeepassXC
       "nngceckbapebfimnlniiiahkandclblb" # bitwarden
-
+      "ekhagklcjbdpajgpjgmbionohlpdbjgc" # ZoteroConnectorp
+      "pkehgijcmpdhfbdbbnkijodmdjhbjlgp" # PrivacyBadger
+      "doojmbjmlfjjnbmnoijecmcbfeoakpjm" # NoScript
     ];
   };
 }

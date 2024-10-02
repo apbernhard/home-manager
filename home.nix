@@ -11,7 +11,7 @@
   home.username = "dertrudi";
   home.homeDirectory = "/home/dertrudi";
 
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05";
 
   programs.htop = {
     enable = true;
@@ -26,7 +26,6 @@
     pkgs.bat
     pkgs.btop
     pkgs.feh
-    pkgs.nemo
     pkgs.treefmt
     pkgs.meslo-lgs-nf
 
@@ -35,11 +34,17 @@
     pkgs.imagemagick
 
     # Communication
-    pkgs.signal-desktop
+   # pkgs.signal-desktop
     pkgs.element-desktop
 
     pkgs.bitwarden
+    pkgs.zotero
+    pkgs.zoom
+    pkgs.cherrytree
 
+    # privacy
+    pkgs.tor
+    pkgs.tor-browser
     # Drivers
     pkgs.brlaser
 
